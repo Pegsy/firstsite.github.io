@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Sports Nutrition</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/logo.png"
+              alt=""
+              width="40"
+              height="40"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0" style="margin-right: 20px">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Адреса магазинов</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="prfoile.html">Профиль</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="dropdown" style="margin-left: 10px; margin-right: 30px">
+              <button
+                type="button"
+                style="background-color: #3e6ea6; color: white"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                Войти
+              </button>
+              <form class="dropdown-menu p-4 me-3" style="width: 250px">
+                <div class="mb-3">
+                  <label for="exampleDropdownFormEmail2" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleDropdownFormEmail2"
+                    placeholder="email@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleDropdownFormPassword2" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleDropdownFormPassword2"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="dropdownCheck2"
+                    />
+                    <label class="form-check-label" for="dropdownCheck2">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+
+            <form action="signup.html">
+              <button class="btn button">Регистрация</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="header_bottom-wrap" style="padding: 0">
+              <div class="col-lg-12">
+                <nav
+                  class="navbar navbar-expand-lg navbar-dark"
+                  style="background-color: #3e6ea6"
+                >
+                  <div class="container-fluid">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                      class="collapse navbar-collapse"
+                      id="navbarSupportedContent"
+                    >
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link active dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Каталог
+                          </a>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link active dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Бренды
+                          </a>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link active dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Цели
+                          </a>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a
+                            class="nav-link active dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Скидки и акции
+                          </a>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex">
+                        <input
+                          class="form-control me-2"
+                          type="search"
+                          placeholder="Search"
+                          aria-label="Search"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-title">
+        <div class="container">
+          <h1>Sport Nutrition</h1>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <div class="container categ">
+              <div class="type">
+                <h6>Категории</h6>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    BCAA
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Креатин
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Протеин
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Гейнер
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Витамин С
+                  </label>
+                </div>
+                <a href="#" style="text-decoration: none">Показать все >></a>
+              </div>
+              <div class="form-product mt-4">
+                <h6>Форма выпуска</h6>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Порошок
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Капсулы/таблетки
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Напиток
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Батончик
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Печенье
+                  </label>
+                </div>
+
+                <a href="#" style="text-decoration: none">Показать все >></a>
+              </div>
+              <div class="avaliable mt-4">
+                <h6>Наличие</h6>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Только в наличии
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="row row-cols-lg-3 row-cols-md-2 mt-4 g-4 items">
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img src="assets/bcaa.jpeg" class="card-img-top" alt="..." />
+                  <span> <img src="assets/star.png" alt="рейтинг" /> 4,8</span>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a href="#"> Bcaa Xplode Olimp Sport Nutrition 500 г</a>
+                    </h6>
+                    <p class="card-text type">BCAA</p>
+                    <p class="card-text">
+                      В наличии: <a href="#">в 7 магазинах</a>
+                    </p>
+                    <a href="#" class="btn button">2700 ₽</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/creatine.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <span> <img src="assets/star.png" alt="рейтинг" /> 5,0</span>
+
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a href="#"
+                        >Creatine Monohydrate Powder Olimp Sport Nutrition 250
+                        г</a
+                      >
+                    </h6>
+                    <p class="card-text type">Креатин моногидрат</p>
+                    <p class="card-text">
+                      В наличии: <a href="#">в 4 магазинах</a>
+                    </p>
+                    <a href="#" class="btn button">3900 ₽</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/whey protein.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a href="#"
+                        >100% Whey Protein Complex Olimp Sport Nutrition</a
+                      >
+                    </h6>
+                    <p class="card-text type">Сывороточный протеин</p>
+                    <p class="card-text">
+                      В наличии: <a href="#">в 4 магазинах</a>
+                    </p>
+                    <a href="#" class="btn button">5700 ₽</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img src="assets/c.jpeg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      Set-free Lady Olimp Sport Nutrition
+                    </h6>
+                    <p class="card-text">Витамин С</p>
+                    <h4 class="card-text mt-4">Нет в наличии</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="assets/profi-mass.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">Profi Mass Olimp Sport Nutrition</h6>
+                    <p class="card-text">Высокобелковый гейнер</p>
+                    <p class="card-text">
+                      В наличии: <a href="#">в 3 магазинах</a>
+                    </p>
+                    <a href="#" class="btn button">2250 ₽</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem">
+                  <img src="assets/gain.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      Gain Bolic 6000 Olimp Sport Nutrition 4000 г
+                    </h6>
+                    <p class="card-text">Высокоуглеводный гейнер</p>
+                    <p class="card-text">
+                      В наличии: <a href="#">в 5 магазинах</a>
+                    </p>
+                    <a href="#" class="btn button">9960 ₽</a>
+                  </div>
+                </div>
+              </div>
+              <a href="" id="showmore">Показать еще товары</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="border-top mt-5">
+      <footer class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-dark text-decoration-none"
+            >
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <p class="text-muted">© 2022</p>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
